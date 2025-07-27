@@ -18,7 +18,7 @@ namespace EAL
     public:
     virtual ~IComputeShader() = default;
     virtual void computeWithShader(const std::vector<EAL::Ray>& rays,
-                                                        const std::vector<EAL::Sphere>& spheres, const EAL::Image* image) = 0;
+                                                        const std::vector<EAL::Sphere>& spheres, EAL::Image* image) = 0;
   };
 }
 
