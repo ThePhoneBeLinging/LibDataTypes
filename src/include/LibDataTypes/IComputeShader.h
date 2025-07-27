@@ -7,6 +7,7 @@
 #include <vector>
 
 #include "Double3.h"
+#include "Image.h"
 #include "Ray.h"
 #include "Sphere.h"
 
@@ -16,8 +17,8 @@ namespace EAL
   {
     public:
     virtual ~IComputeShader() = default;
-    virtual std::vector<EAL::Double3> computeWithShader(const std::vector<EAL::Ray>& rays,
-                                                        const std::vector<EAL::Sphere>& spheres) = 0;
+    virtual void computeWithShader(const std::vector<EAL::Ray>& rays,
+                                                        const std::vector<EAL::Sphere>& spheres, const EAL::Image* image) = 0;
   };
 }
 
