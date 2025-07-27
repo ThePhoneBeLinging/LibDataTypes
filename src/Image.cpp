@@ -13,14 +13,6 @@ EAL::Image::Image(const int width, const int height) : pixelBuffer_(width * heig
   }
 }
 
-void EAL::Image::setPixel(int x, int y, int r, int g, int b)
-{
-  int index = y * width_ + x;
-  pixelBuffer_[index].r = r;
-  pixelBuffer_[index].g = g;
-  pixelBuffer_[index].b = b;
-}
-
 void EAL::Image::updateTexture()
 {
   UpdateTexture(texture_,pixelBuffer_.data());

@@ -16,13 +16,10 @@ class Image
 {
 public:
   Image(int width, int height);
-  void setPixel(int x, int y, int r, int g, int b);
   void updateTexture();
   void draw() const;
-private:
-  int width_;
-  int height_;
   std::vector<Color> pixelBuffer_;
+private:
   Texture2D texture_;
 
 };
