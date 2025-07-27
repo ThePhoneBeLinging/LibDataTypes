@@ -4,8 +4,7 @@
 
 #include "LibDataTypes/Image.h"
 
-EAL::Image::Image(const int width, const int height) : pixelBuffer_(width * height), texture_(LoadTextureFromImage(GenImageColor(width,height,WHITE))), width_(width),
-                                                       height_(height)
+EAL::Image::Image(const int width, const int height) : pixelBuffer_(width * height), texture_(LoadTextureFromImage(GenImageColor(width,height,WHITE)))
 {
   for (int i = 0; i < pixelBuffer_.size(); i++)
   {
