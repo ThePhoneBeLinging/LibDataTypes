@@ -4,7 +4,7 @@
 
 #ifndef RAY_H
 #define RAY_H
-#include "Double2.h"
+#include "Double3.h"
 
 namespace EAL
 {
@@ -14,8 +14,8 @@ class Ray
 {
 public:
   Ray();
-  Double2 origin;
-  Double2 vector;
+  Double3 origin;
+  Double3 vector;
 };
 
 }
